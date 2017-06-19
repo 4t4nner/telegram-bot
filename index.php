@@ -10,26 +10,9 @@
   $update = file_get_contents ($webSite . '/getupdates');
 
   echo '<pre>';
-  var_dump($update);
-  echo '<br/>';
-  echo '<br/>';
-  $updateArray = json_decode ($update);
-  print_r ($updateArray);
-  echo '<br/>';
-  echo '<br/>';
+  $updateArray = json_decode ($update,true);
   $chatId = $updateArray['result'][0]['message']['chat']['id'];
-//  file_put_contents ($webSite . '/sendmessage?chat_id=' . $chatId . '&text=test');
-  //    chat_id
-
-  var_dump ($update);
-  echo '<br/>';
-  echo '<br/>';
-  var_dump ($updateArray);
-  echo '<br/>';
-  echo '<br/>';
-  var_dump ($chatId);
-  echo '<br/>';
-  echo '<br/>';
+  file_put_contents ($webSite . '/sendmessage?chat_id=' . $chatId . '&text=test');
 
 
 
