@@ -14,7 +14,7 @@
   $chatId = $updateArray['result'][0]['message']['chat']['id'];
   $string = $webSite . '/sendmessage?chat_id=' . $chatId . '&text=test';
   print_r($string);
-  file_get_contents ('https://api.telegram.org/bot448066609:AAFed17GD1yws3wV3AB4it_rWSt-yMdi6Ck/sendmessage?chat_id=304219410&text=blabla');
+  file_get_contents ($string);
 
 
 
