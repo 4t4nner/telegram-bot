@@ -13,6 +13,7 @@
 //  file_put_contents ($webSite . '/sendmessage?chat_id=' . $chatId . '&text=test');
   //    chat_id
 
+  print_r ($updateArray);
   print_r ($chatId);
 
 
