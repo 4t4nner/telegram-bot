@@ -8,16 +8,26 @@
 //  $webSite = 'https://tgbot.test.maderwin.com/';
 
   $update = file_get_contents ($webSite . '/getupdates');
-  print_r ($update);
+  var_dump($update);
+  echo '<br/>';
+  echo '<br/>';
   $updateArray = json_decode ($update);
   print_r ($updateArray);
+  echo '<br/>';
+  echo '<br/>';
   $chatId = $updateArray['result'][0]['message']['chat']['id'];
 //  file_put_contents ($webSite . '/sendmessage?chat_id=' . $chatId . '&text=test');
   //    chat_id
 
-  print_r ($update);
-  print_r ($updateArray);
-  print_r ($chatId);
+  var_dump ($update);
+  echo '<br/>';
+  echo '<br/>';
+  var_dump ($updateArray);
+  echo '<br/>';
+  echo '<br/>';
+  var_dump ($chatId);
+  echo '<br/>';
+  echo '<br/>';
 
 
 
