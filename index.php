@@ -12,7 +12,9 @@
   echo '<pre>';
   $updateArray = json_decode ($update,true);
   $chatId = $updateArray['result'][0]['message']['chat']['id'];
-  file_put_contents ($webSite . '/sendmessage?chat_id=' . $chatId . '&text=test');
+  $string = $webSite . '/sendmessage?chat_id=' . $chatId . '&text=test';
+  print_r($string);
+  file_put_contents ($string);
 
 
 
