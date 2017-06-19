@@ -7,7 +7,7 @@
 
 //  $webSite = 'https://tgbot.test.maderwin.com/';
 
-  $update = file_get_contents($webSite.'getupdates');
+  $update = file_get_contents($webSite.'/getupdates');
 
   print_r($update);
 
