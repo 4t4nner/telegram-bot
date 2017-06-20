@@ -11,7 +11,7 @@
 
 
   $updateArray = json_decode ($update,true);
-  $chatId = $updateArray['result'][0]['message']['chat']['id'];
+  $chatId = $updateArray['message']['chat']['id'];
   $string = $webSite . '/sendmessage?chat_id=' . $chatId . '&text=test';
 
   if($update){
