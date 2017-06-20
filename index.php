@@ -15,7 +15,7 @@
   $string = $webSite . '/sendmessage?chat_id=' . $chatId . '&text=test';
 
   if($update){
-    file_put_contents ('smth.txt',print_r($updateArray,true));
+    file_put_contents ('smth.txt',print_r($updateArray,true) . "<br><br>\n\n".'string= '.$string );
     file_get_contents ($string);
   } else {
     //OUTPUT_SECTION
