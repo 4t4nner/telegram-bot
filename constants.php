@@ -1,7 +1,7 @@
 <?php
 
   define ('BOT_TOKEN', '448066609:AAFed17GD1yws3wV3AB4it_rWSt-yMdi6Ck');
-  define ('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN);
+  define ('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 //  api commands
   define ('CA_SEND_MESSAGE', '/sendmessage');
