@@ -48,7 +48,11 @@
           break;
         }
         case C_GET_COMMANDS : {
-          
+          static::apiRequest ("sendMessage", [
+            'chat_id'      => static::$chat['id'],
+            "text"         => '/commands',
+          ]);
+
           break;
         }
         case C_GET_USER_REQ : {
