@@ -14,9 +14,13 @@
 //  $chatId = $updateArray['result'][0]['message']['chat']['id'];
 //  $string = $webSite . '/sendmessage?chat_id=' . $chatId . '&text=test';
 
-  file_put_contents ('smth.txt',$update);
+  if($update){
+    file_put_contents ('smth.txt',$update);
+  }
 
   var_dump(file_get_contents('smth.txt'));
+
+  print_r( 'file_exists: ' .file_exists('smth.txt'));
 
 
 
