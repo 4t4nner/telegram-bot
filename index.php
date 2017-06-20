@@ -1,6 +1,8 @@
 <?php
 
-  echo '7!';
+  require_once 'BotInterface.php';
+
+  echo 'BOOooOT!';
 
   $botToken = '448066609:AAFed17GD1yws3wV3AB4it_rWSt-yMdi6Ck';
   $webSite = 'https://api.telegram.org/bot'.$botToken;
@@ -15,8 +17,10 @@
   $string = $webSite . '/sendmessage?chat_id=' . $chatId . '&text=test';
 
   if($update){
+//    webhook
     file_put_contents ('smth.txt',print_r($updateArray,true) . "<br><br>\n\n".'string= '.$string );
-    file_get_contents ($string);
+
+    \Bot\Bot::execute();
   } else {
     //OUTPUT_SECTION
     echo '<pre>';
