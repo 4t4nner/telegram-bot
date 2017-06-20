@@ -1,6 +1,6 @@
 <?php
 
-  require_once 'BotInterface.php';
+  require_once 'Bot.php';
 
   echo 'BOOooOT!';
 
