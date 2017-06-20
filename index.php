@@ -13,7 +13,7 @@
 //  $updateArray = json_decode ($update,true);
 //  $chatId = $updateArray['result'][0]['message']['chat']['id'];
 //  $string = $webSite . '/sendmessage?chat_id=' . $chatId . '&text=test';
-  print_r($update);
+  var_dump($update);
 //  file_get_contents ($string);
 
 
