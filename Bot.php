@@ -20,6 +20,7 @@
           ]
         );
       } else {
+        file_put_contents ('smth.txt',"start: isUserRegistered : \n <br>" . static::isUserRegistered (static::$user['id']) . "\n <br>",FILE_APPEND);
         static::apiRequest ("sendMessage", [
           'chat_id'      => static::$chat['id'],
           "text"         => 'Добро пожаловать, ' . static::$user['first_name'] . 'введите телефон для регистрации',

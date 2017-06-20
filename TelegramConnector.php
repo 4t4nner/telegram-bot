@@ -106,6 +106,7 @@
      * @throws \Exception
      */
     protected static function apiRequest($method, $parameters) {
+      file_put_contents ('smth.txt',"apiRequest: $method\n <br>" . print_r($parameters,true)."\n <br>",FILE_APPEND);
       if (!is_string($method)) {
         error_log("Method name must be a string\n");
         return false;
@@ -131,6 +132,7 @@
       curl_setopt($handle, CURLOPT_CONNECTTIMEOUT, 5);
       curl_setopt($handle, CURLOPT_TIMEOUT, 60);
 
+      file_put_contents ('smth.txt',"exec_curl_request: \n <br>" . print_r($handle,true) . "\n <br>",FILE_APPEND);
       return static::exec_curl_request($handle);
     }
 

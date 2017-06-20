@@ -24,8 +24,10 @@
   } else {
     //OUTPUT_SECTION
     echo '<pre>';
-    var_dump(file_get_contents('smth.txt'));
-    print_r( 'file_exists: ' .file_exists('smth.txt'));
+    if(file_exists('smth.txt')){
+      var_dump(file_get_contents('smth.txt'));
+      print_r( 'file_exists: ' .file_exists('smth.txt'));
+    }
   }
 
 
