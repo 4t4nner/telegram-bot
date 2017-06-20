@@ -1,6 +1,6 @@
 <?php
 
-  echo '6!';
+  echo '7!';
 
   $botToken = '448066609:AAFed17GD1yws3wV3AB4it_rWSt-yMdi6Ck';
   $webSite = 'https://api.telegram.org/bot'.$botToken;
