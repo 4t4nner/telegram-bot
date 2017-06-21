@@ -78,12 +78,17 @@
     public static function getUserCommands(){
       
     }
-    
-    
+
+    /**
+     * заявка
+     */
     public static function getUserRequests(){
       
     }
-    
+
+    /**
+     * заявка
+     */
     public static function addUserRequest(){
       
     }

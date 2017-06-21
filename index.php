@@ -24,10 +24,17 @@
   } else {
     //OUTPUT_SECTION
     echo '<pre>';
-    if(file_exists('smth.txt')){
-      var_dump(file_get_contents('smth.txt'));
-      print_r( 'file_exists: ' .file_exists('smth.txt'));
+
+    $mysqli = new mysqli("jdbc:mysql://localhost:3306/tgbot", "tgbot", "tgbot", "tgbot");
+
+    if ($mysqli->connect_errno) {
+      echo "Не удалось подключиться к MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     }
+
+//    if(file_exists('smth.txt')){
+//      var_dump(file_get_contents('smth.txt'));
+//      print_r( 'file_exists: ' .file_exists('smth.txt'));
+//    }
   }
 
 
