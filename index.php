@@ -25,7 +25,7 @@
     //OUTPUT_SECTION
     echo '<pre>';
 
-    $mysqli = new mysqli("jdbc:mysql://localhost:3306/tgbot", "tgbot", "tgbot", "tgbot");
+    $mysqli = new mysqli("localhost", "tgbot", "tgbot", "tgbot");
 
     if ($mysqli->connect_errno) {
       echo "Не удалось подключиться к MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
